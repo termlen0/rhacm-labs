@@ -14,6 +14,8 @@ spec:
       labels:
         name: postgresql
     spec:
+      imagePullSecrets:
+        - name: 11856927-puller-pull-secret
       containers:
       - capabilities: {}
         env:
@@ -34,8 +36,6 @@ spec:
               name: ether
         image: registry.redhat.io/rhscl/postgresql-10-rhel7@sha256:5c4f5f52a37718a9a1997ba212ef172694475558c35232b56dac638529c5b569
         imagePullPolicy: IfNotPresent
-      #imagePullSecrets:
-      #  - name: 11856927-puller-pull-secret
         livenessProbe:
           exec:
             command:
