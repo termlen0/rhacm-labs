@@ -6,7 +6,7 @@ metadata:
   namespace: etherpad
 spec:
   type: GitHub
-  pathname: https://github.com/redhat-gpte-devopsautomation/rhacm-labs.git
+  pathname: https://github.com/termlen0/rhacm-labs.git
 ---
 apiVersion: app.k8s.io/v1beta1
 kind: Application
@@ -40,4 +40,3 @@ spec:
     placementRef:
       kind: PlacementRule
       name: dev-clusters
-
