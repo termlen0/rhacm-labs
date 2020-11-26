@@ -14,8 +14,6 @@ spec:
       labels:
         name: postgresql
     spec:
-      imagePullSecrets:
-        - name: 11856927-puller-pull-secret
       containers:
       - capabilities: {}
         env:
