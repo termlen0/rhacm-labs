@@ -73,10 +73,7 @@ spec:
       securityContext: {}
       terminationGracePeriodSeconds: 30
       volumes:
-        - name: postgresql-data
-          persistentVolumeClaim:
-            claimName: postgresql
-      # - configMap:
-      #     defaultMode: 420
-      #     name: etherpad-settings
-      #   name: etherpad-settings
+      - configMap:
+          defaultMode: 420
+          name: etherpad-settings
+        name: etherpad-settings
